@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class OpsPageGoole extends StatelessWidget {
-  const OpsPageGoole({super.key});
+class OpsPageGoogle extends StatelessWidget {
+  const OpsPageGoogle({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -13,13 +14,13 @@ class LoginPage extends StatelessWidget {
           width: MediaQuery.of(context).size.width,
           child: Image.asset('assets/images/background.png', fit: BoxFit.cover),
         ),
-        _body(),
+        _body(context),
       ],
     ));
   }
 }
 
-Widget _body() {
+Widget _body(BuildContext context) {
   return Center(
     child: Column(children: [
       const SizedBox(
@@ -56,7 +57,10 @@ Widget _body() {
           width: 300,
           height: 50,
           child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pushNamed('/ops');
+                //para tirar a opção de voltar usar pushReplacementNamed
+              },
               style: ButtonStyle(
                   backgroundColor:
                       MaterialStateProperty.all(Colors.transparent),
