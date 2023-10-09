@@ -19,7 +19,7 @@ class OpsPageGoogle extends StatelessWidget {
             height: 80,
             child: Text(
               'Oops!',
-              style: TextStyle(color: Colors.black87, fontSize: 25),
+              style: TextStyle(color: Colors.black87, fontSize: 25,),
             ),
           ),
           const SizedBox(
